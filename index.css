@@ -1,0 +1,141 @@
+html {
+    font-family: Baloo;
+	font-size: 16px;
+}
+
+body {
+    padding: 10px;
+    background-image: linear-gradient(#5DA4D9, #FFF);
+}
+
+h1 {
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 5px #041B2D;
+}
+
+#week-container {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+	max-width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.emoji-container span {
+    margin: .7rem;
+    font-size: 3rem;
+}
+
+.day-container {
+	padding: .7rem 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-bottom: 2px solid #041B2D;
+}
+
+.day-name {
+	color: #fff;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 5px #041B2D;
+	display: grid;
+	grid-template-columns: 1rem auto;
+	gap: 1rem;
+	margin-right: 1rem;
+}
+
+.day-name:hover {
+	cursor: pointer;
+}
+
+.radio-buttons {
+	margin-right: .5rem;
+	-webkit-appearance: none;
+	appearance: none;
+	color: #041B2D;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: .15rem solid #041B2D;
+	border-radius: 50%;
+	transform: translateY(-0.075rem);
+	display: grid;
+	place-content: center;
+}
+
+.radio-buttons::before {
+	content: "";
+	width: .65rem;
+	height: .65rem;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1rem 1rem #fff, 0 0 .5rem .1rem #041B2D;
+}
+
+.radio-buttons:checked::before {
+	transform: scale(1);	
+}
+
+.radio-buttons:hover {
+	cursor: pointer;
+}
+
+#emoji-input {
+    margin: 0 auto 1.5rem auto; 
+    display: block;
+    border: none;
+    line-height: 2rem;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+	box-shadow: 0 0 5px #041B2D;
+}
+
+#emoji-input:focus{
+	outline: none;
+	box-shadow: 0 0 5px 2px #041B2D;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px;
+}
+
+.buttons {
+    font-family: Baloo;
+    letter-spacing: 2px;
+    background: darkcyan;
+    color: #ffffff;
+	text-shadow: 1px 1px 1px #041B2D;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin: 0 10px;
+	box-shadow: 0 0 5px #041B2D;
+	background-size: 200% auto;
+	transition: .5s;
+}
+
+.buttons:hover {
+	cursor: pointer;
+	background-position: right center;
+}
+
+.buttons:active {
+	box-shadow: inset 0 0 3px 0 #041B2D;
+}
+
+#push-btn,#unshift-btn {
+	background-image: linear-gradient(to right, #00C734 0%, #6EE1B0 50%, #43C0DD 100%);
+}
+
+#shift-btn,#pop-btn {
+	background-image: linear-gradient(to right, #FB4359 0%, #F3001C 50%, #C076E6 100%);
+}

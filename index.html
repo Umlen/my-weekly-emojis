@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+		<meta charset = "utf-8">
+		
+		<title>My Weekly Emojis</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">		
+    </head>
+    <body>
+        <h1>My Weekly Emojis</h1>   
+        <div id="week-container">
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "mon" class = "radio-buttons" checked>
+				<label for = "mon" class = "day-name">Mon</label>
+				<div class = "emoji-container" id = "monday"></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "tue" class = "radio-buttons">
+				<label for = "tue" class = "day-name">Tue</label>
+				<div class = "emoji-container" id = "tuesday"></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "wed" class = "radio-buttons">
+				<label for = "wed" class = "day-name">Wed</label>
+				<div class = "emoji-container" id = "wednesday"></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "thu" class = "radio-buttons">
+				<label for = "thu" class = "day-name">Thu</label>
+				<div class = "emoji-container" id = "thursday"></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "fri" class = "radio-buttons">
+				<label for = "fri" class = "day-name">Fri</label>
+				<div class = "emoji-container" id = "friday" ></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "sat" class = "radio-buttons">
+				<label for = "sat" class = "day-name">Sat</label>
+				<div class = "emoji-container" id = "saturday" ></div>
+			</div>
+			<div class = "day-container">
+				<input type = "radio" name = "days" id = "sun" class = "radio-buttons">
+				<label for = "sun" class = "day-name">Sun</label>
+				<div class = "emoji-container" id = "sunday"></div>
+			</div>
+		</div>
+        <input type="text" id="emoji-input" placeholder="type an emoji 🎉">
+        <div class="buttons-wrapper">
+            <button class = "buttons" id="push-btn">Add to end</button>
+            <button class = "buttons" id="unshift-btn">Add to beginning</button>
+        </div>
+        <div class="buttons-wrapper">
+            <button class = "buttons" id="pop-btn">Remove from end</button>
+            <button class = "buttons" id="shift-btn">Remove from beginning</button>
+        </div>
+        <script src = "index.js"></script>
+    </body>
+</html>
